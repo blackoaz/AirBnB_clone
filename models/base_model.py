@@ -2,6 +2,7 @@
 """base model class"""
 import uuid
 from datetime import datetime
+import models
 
 
 class BaseModel:
@@ -20,8 +21,12 @@ class BaseModel:
                 else:
                     self.__dict__[key] = val
 
+        else:
+            models.storage.new(self)
+
     def save(self):
         self.updated_at = datetime.now()
+        models.storage.save()
 
     def to_dict(self):
         """Method for creating a dictionary for th class"""
