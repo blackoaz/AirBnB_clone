@@ -8,7 +8,7 @@ class BaseModel:
     """base class"""
     def __init__(self, *args, **kwargs):
         """constructor class for basemodel"""
-        date_fmt = %Y-%m-%dT%H:%M:%S.%f
+        date_fmt = "%Y-%m-%dT%H:%M:%S.%f"
         self.id = str(uuid.uuid4())
         self.created_at = datetime.now()
         self.updated_at = datetime.now()
