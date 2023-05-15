@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 import cmd
+"""Function for implemting the cmd module"""
 
 
 class HBNBCommand(cmd.Cmd):
