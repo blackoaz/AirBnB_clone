@@ -13,7 +13,7 @@ class BaseModel:
         self.created_at = datetime.now()
         self.updated_at = datetime.now()
 
-        if kwargs != 0:
+        if len(kwargs) != 0:
             for key, val in kwargs.items():
                 if key == "created_at" or key == "updated_at":
                     self.__dict__[key] = datetime.strptime(val, date_fmt)
