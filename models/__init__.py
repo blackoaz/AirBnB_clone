@@ -1,7 +1,7 @@
 from models.engine.file_storage import FileStorage
 
 """
-Creating intances of file storage
+Creating instances of file storage
 """
 storage = FileStorage()
 storage.reload()
