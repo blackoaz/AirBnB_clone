@@ -5,6 +5,8 @@ header{
     border-bottom: 1px solid #CCCCCC;
     display: flex;
     align-items: center;
+    position: fixed;
+    z-index: 1;
 }
 header .logo{
     width: 142px;
